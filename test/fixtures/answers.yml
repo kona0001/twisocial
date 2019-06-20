@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: MyString
+  situation: 1
+  ans1: MyString
+  ans2: MyString
+  ans3: MyString
+
+two:
+  uid: MyString
+  situation: 1
+  ans1: MyString
+  ans2: MyString
+  ans3: MyString

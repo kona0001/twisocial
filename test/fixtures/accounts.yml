@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: MyString
+  icon_url: MyString
+  progress: 1
+  like_name: MyString
+  known_name: MyString
+
+two:
+  uid: MyString
+  icon_url: MyString
+  progress: 1
+  like_name: MyString
+  known_name: MyString

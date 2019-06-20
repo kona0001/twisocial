@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  num: 1
+  text: MyString
+  like: 1
+  fav: 1
+  mode: 1
+
+two:
+  num: 1
+  text: MyString
+  like: 1
+  fav: 1
+  mode: 1

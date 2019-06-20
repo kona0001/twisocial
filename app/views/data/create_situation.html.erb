@@ -1,0 +1,37 @@
+<div class="top"></div>
+
+<%= form_tag("store_situation", method: "post") do %>
+    <span class="form-style">num</span>
+    <input type="text" name="num" />
+    <br>
+
+    <span class="form-style">text</span>
+    <textarea name="text"></textarea>
+    <br>
+
+    <span class="form-style">like</span>
+    <input type="text" name="like" />
+    <br>
+
+    <span class="form-style">RT</span>
+    <input type="text" name="fav" />
+    <br>
+
+    <span class="form-style">MODE</span>
+    <div class="cp_ipselect cp_sl03">
+    <select name="mode">
+      <option value="" hidden>モード</option>
+      <option value="1">１）　リプライなし</option>
+      <option value="2">２）　プラスのリプライのみあり</option>
+      <option value="3">３）　マイナスのリプライのみあり</option>
+      <option value="4">４）　どちらのリプライもあり</option>
+    </select>
+    </div>
+    <br>
+
+    <span class="form-style">image_URL(あれば)</span>
+    <input type="text" name="image_url" />
+    <br>
+
+  <input type="submit" name="ans" value="作成" class="post-btn">
+<% end %>

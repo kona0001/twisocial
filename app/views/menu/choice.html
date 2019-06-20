@@ -1,0 +1,65 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+<div class="top"></div>
+
+<form method="post" action="choice/post">
+    <span class="form-style">年齢を選択してください</span>
+    <div class="cp_ipselect cp_sl03">
+    <select required name="answer1" >
+      <option value="" hidden>年齢</option>
+      <option value="1">～10歳</option>
+      <option value="2">11～15歳</option>
+      <option value="3">16～20歳</option>
+      <option value="4">21～25歳</option>
+      <option value="5">26～30歳</option>
+      <option value="6">31～35歳</option>
+      <option value="7">36～40歳</option>
+      <option value="8">41歳～</option>
+    </select>
+    </div>
+
+    <span class="form-style">性別を選択してください</span>
+    <div class="cp_ipselect cp_sl03">
+    <select name="answer2">
+      <option value="" hidden>性別</option>
+      <option value="1">女性</option>
+      <option value="2">男性</option>
+      <option value="3">どちらでもない</option>
+    </select>
+    </div>
+
+    <span class="form-style">SNSを使用する頻度を教えてください（見るだけの時間も含む）</span>
+    <div class="cp_ipselect cp_sl03">
+    <select name="answer3">
+      <option value="" hidden>頻度</option>
+      <option value="1">１日あたり２時間以上（いつも使っている）</option>
+      <option value="2">１日あたり１時間～２時間程度（だいたい使っている）</option>
+      <option value="3">１日あたり30分～１時間程度（たまに使っている）</option>
+      <option value="4">１日あたり10分～30分程度（１日に数えられるくらい）</option>
+      <option value="5">１日あたり10分未満（まれに使う）</option>
+    </select>
+    </div>
+
+    <span class="form-style">コンピュータの知識について教えてください</span>
+    <div class="cp_ipselect cp_sl03">
+    <select name="answer4">
+      <option value="" hidden>知識</option>
+      <option value="1">コンピュータに精通している（コンピュータ分野の学生だ）</option>
+      <option value="2">そこそこ詳しい（趣味程度である）</option>
+      <option value="3">普通（平均くらいの知識である）</option>
+      <option value="4">あまり詳しくない（無知ではない）</option>
+      <option value="5">ほとんど知らない（コンピュータについてよくわからない）</option>
+    </select>
+    </div>
+
+  <input type="submit" name="ans" value="回答する" class="post-btn">
+</form>
+
+
+</body>
+</html>

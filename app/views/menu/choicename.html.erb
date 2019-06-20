@@ -1,0 +1,13 @@
+<div class="top"></div>
+
+<%= form_tag("choicename/post", method: "post") do %>
+    <p class="form-style">仲の良い（信頼できる）Twitterのユーザ名を記入してください（誰かに知られることはありません）</p>
+    <input type="text" name="like_name" required />
+    <br>
+
+    <p class="form-style">フォローはしているが関わりの無い・少ないTwitterのユーザ名を記入してください（誰かに知られることはありません）</p>
+    <input type="text" name="known_name" required />
+    <br>
+    <br>
+  <input type="submit" name="ans" value="決定" class="post-btn">
+<% end %>

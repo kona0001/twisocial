@@ -1,0 +1,253 @@
+<div class = "background">
+<div class = "snslayout">
+<div class = "home">
+<div class = "icon-block">
+   <%= image_tag(@user.profile_image_uri_https('original'), class: "icon-circle") %>
+</div>
+<div class = "home-block">
+  <div class = "home-icon-block">
+    <%= image_tag("home.png", :class => "home-icon") %>
+  </div>
+  <div class = "home-text-block"><p class = "home-text">ホーム</p></div>
+</div>
+</div>
+
+<!--肝心のツイートはここから-->
+<div id="modal-main">
+
+  <div class="twitter-icon-block">
+    <div id="pop-profile"><img src="https://pbs.twimg.com/profile_images/1135612028838588416/9qXadu4v_normal.png" class="icon-circle icon-layout"></div>
+  </div>
+  <div class="twitter-right-block">
+    <div class="twitter-name-block">
+      <span class = "twitter-name">Gamestry</span>
+      <span class = "twitter-screenname">@Gamestry</span>
+      <span class = "twitter-info">あああああがリツイート</span>
+    </div>
+    <div class = "twitter-text-block">
+      <div class = "twitter-text">
+        6／22の犬山ぷよ大会ですがポイント対象大会に昇格しました。(只今申請中)
+        ぷよぷよキャンプより事前エントリーの程、よろしくお願い致します。</div>
+    </div>
+    <div class="twitter-bottom-block">
+      <span class = "twitter-rt">RT: 10</span>
+      <span class = "twitter-fav">fav: 22</span>
+    </div>
+  </div>
+
+<!--リプライはここから-->
+  <div class="twitter-reply-block">
+    <div class="twitter-icon-block">
+      <img src="https://pbs.twimg.com/profile_images/1135612028838588416/9qXadu4v_normal.png" class="icon-circle icon-layout">
+    </div>
+    <div class="twitter-right-block">
+      <div class="twitter-name-block">
+        <span class = "twitter-reply-name">Camestry</span>
+        <span class = "twitter-reply-screenname">@Camestry</span>
+      </div>
+      <div class = "twitter-text-block">
+        <div class = "twitter-reply-text">
+          それな！</div>
+        </div>
+        <div class="twitter-bottom-block">
+          <span class = "twitter-rt">RT: 1</span>
+          <span class = "twitter-fav">fav: 2</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="twitter-reply-block">
+      <div class="twitter-icon-block">
+        <img src="https://pbs.twimg.com/profile_images/1135612028838588416/9qXadu4v_normal.png" class="icon-circle icon-layout">
+      </div>
+      <div class="twitter-right-block">
+        <div class="twitter-name-block">
+          <span class = "twitter-reply-name">Tamestry</span>
+          <span class = "twitter-reply-screenname">@Tamestry</span>
+        </div>
+        <div class = "twitter-text-block">
+          <div class = "twitter-reply-text">
+            それな！</div>
+          </div>
+          <div class="twitter-bottom-block">
+            <span class = "twitter-rt">RT: 1</span>
+            <span class = "twitter-fav">fav: 2</span>
+          </div>
+        </div>
+      </div>
+    <!--ここまで-->
+
+
+  <div id="profile-block">
+    <div class="profile-icon-block"><img src="https://pbs.twimg.com/profile_images/1135612028838588416/9qXadu4v_normal.png" class="icon-circle icon-layout"></div>
+    <div class="profile-name-block">Gamestry</div>
+    <div class="profile-follow-block">Follow: 222</div>
+    <div class="profile-follower-block">Follower: 2222</div>
+    <div class="profile-text-block">ぷよぷよ／ポップン／マジドロ／ダライアス外伝／ボウリング／スノボ
+       　　 　　ぷよぷよプロライセンス保有 　　 　　　ファイズマンクリエィティブ所属　　　お仕事のご依頼→http://fiseman-creative.co.jp </div>
+  </div>
+</div>
+<div id="modal-bg"></div>
+<!--ここまで-->
+
+<div id="post-form">
+  <form method="post" action="#">
+    <div class="question">
+      <p class="form-style">Q1: あなたはこのツイートを　</p>
+      <select name="answer1" class="form-style">
+        <option value="1">RTする</option>
+        <option value="2">RTしてもよい（気分次第）</option>
+        <option value="3">RTしない</option>
+        <option value="4">決められない</option>
+      </select>
+      <p class="form-style">Q2: その理由は？</p>
+      <select name="answer2" class="form-style">
+        <option value="1">RTする</option>
+        <option value="2">仲の良いフォロワーがRTしたものだから</option>
+        <option value="3">RTしない</option>
+        <option value="4">決められない</option>
+      </select>
+    </div>
+    <div class="question">
+      <p class="form-style">Q3: その他、コメントがあれば</p>
+      <textarea name="manswer3" maxlength="140"></textarea>
+    </div>
+    <div class="question">
+      <input type="submit" name="ans" value="回答する" class="post-btn">
+    </div>
+  </form>
+</div>
+
+<div class="tweet-block" id="new-tweet">
+<div class="twitter-icon-block">
+  <img src="https://pbs.twimg.com/profile_images/1135612028838588416/9qXadu4v_normal.png" class="icon-circle icon-layout">
+</div>
+<div class="twitter-right-block">
+  <div class="twitter-name-block">
+    <span class = "twitter-name">Gamestry</span>
+    <span class = "twitter-screenname">@Gamestry</span>
+  </div>
+  <div class = "twitter-text-block">
+    <div class = "twitter-text">
+      6／22の犬山ぷよ大会ですがポイント対象大会に昇格しました。(只今申請中)
+      ぷよぷよキャンプより事前エントリーの程、よろしくお願い致します。</div>
+  </div>
+  <div class="twitter-bottom-block">
+    <span class = "twitter-rt">RT: 10</span>
+    <span class = "twitter-fav">fav: 22</span>
+  </div>
+</div>
+</div>
+
+<div class="update-block" id="update-tweet">ツイートを更新する（１）</div>
+
+
+
+
+<div class="tweet-block" id="modal-open">
+<div class="twitter-icon-block">
+  <img src="https://pbs.twimg.com/profile_images/1135612028838588416/9qXadu4v_normal.png" class="icon-circle icon-layout">
+</div>
+<div class="twitter-right-block">
+  <div class="twitter-name-block">
+    <span class = "twitter-name">Kamestry</span>
+    <span class = "twitter-screenname">@Kamestry</span>
+  </div>
+  <div class = "twitter-text-block">
+    <div class = "twitter-text">
+      6／22の犬山ぷよ大会ですがポイント対象大会に昇格しました。(只今申請中)
+      ぷよぷよキャンプより事前エントリーの程、よろしくお願い致します。</div>
+  </div>
+  <div class="twitter-bottom-block">
+    <span class = "twitter-rt">RT: 10</span>
+    <span class = "twitter-fav">fav: 22</span>
+  </div>
+</div>
+</div>
+
+<div class="tweet-block">
+<div class="twitter-icon-block">
+  <img src="https://pbs.twimg.com/profile_images/1135612028838588416/9qXadu4v_normal.png" class="icon-circle icon-layout">
+</div>
+<div class="twitter-right-block">
+  <div class="twitter-name-block">
+    <span class = "twitter-name">Kamestry</span>
+    <span class = "twitter-screenname">@Kamestry</span>
+  </div>
+  <div class = "twitter-text-block">
+    <div class = "twitter-text">
+      6／22の犬山ぷよ大会ですがポイント対象大会に昇格しました。(只今申請中)
+      ぷよぷよキャンプより事前エントリーの程、よろしくお願い致します。</div>
+  </div>
+  <div class="twitter-bottom-block">
+    <span class = "twitter-rt">RT: 10</span>
+    <span class = "twitter-fav">fav: 22</span>
+  </div>
+</div>
+</div>
+
+<div class="tweet-block">
+<div class="twitter-icon-block">
+  <img src="https://pbs.twimg.com/profile_images/1135612028838588416/9qXadu4v_normal.png" class="icon-circle icon-layout">
+</div>
+<div class="twitter-right-block">
+  <div class="twitter-name-block">
+    <span class = "twitter-name">Kamestry</span>
+    <span class = "twitter-screenname">@Kamestry</span>
+  </div>
+  <div class = "twitter-text-block">
+    <div class = "twitter-text">
+      6／22の犬山ぷよ大会ですがポイント対象大会に昇格しました。(只今申請中)
+      ぷよぷよキャンプより事前エントリーの程、よろしくお願い致します。</div>
+  </div>
+  <div class="twitter-bottom-block">
+    <span class = "twitter-rt">RT: 10</span>
+    <span class = "twitter-fav">fav: 22</span>
+  </div>
+</div>
+</div>
+
+<div class="tweet-block">
+<div class="twitter-icon-block">
+  <img src="https://pbs.twimg.com/profile_images/1135612028838588416/9qXadu4v_normal.png" class="icon-circle icon-layout">
+</div>
+<div class="twitter-right-block">
+  <div class="twitter-name-block">
+    <span class = "twitter-name">Kamestry</span>
+    <span class = "twitter-screenname">@Kamestry</span>
+  </div>
+  <div class = "twitter-text-block">
+    <div class = "twitter-text">
+      6／22の犬山ぷよ大会ですがポイント対象大会に昇格しました。(只今申請中)
+      ぷよぷよキャンプより事前エントリーの程、よろしくお願い致します。</div>
+  </div>
+  <div class="twitter-bottom-block">
+    <span class = "twitter-rt">RT: 10</span>
+    <span class = "twitter-fav">fav: 22</span>
+  </div>
+</div>
+</div>
+
+<div class="tweet-block">
+<div class="twitter-icon-block">
+  <img src="https://pbs.twimg.com/profile_images/1135612028838588416/9qXadu4v_normal.png" class="icon-circle icon-layout">
+</div>
+<div class="twitter-right-block">
+  <div class="twitter-name-block">
+    <span class = "twitter-name">Kamestry</span>
+    <span class = "twitter-screenname">@Kamestry</span>
+  </div>
+  <div class = "twitter-text-block">
+    <div class = "twitter-text">
+      6／22の犬山ぷよ大会ですがポイント対象大会に昇格しました。(只今申請中)
+      ぷよぷよキャンプより事前エントリーの程、よろしくお願い致します。</div>
+  </div>
+  <div class="twitter-bottom-block">
+    <span class = "twitter-rt">RT: 10</span>
+    <span class = "twitter-fav">fav: 22</span>
+  </div>
+</div>
+</div>
+
+</div>
+</div>

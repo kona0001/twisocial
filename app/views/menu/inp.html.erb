@@ -1,0 +1,12 @@
+<div class="top"></div>
+
+<%= form_tag("inp/post", method: "post") do %>
+    <p class="form-style">あなたが何かの投稿をリツイートをする時の基準について、教えてください（面白い投稿のとき、など）</p>
+    <textarea rows="10" cols="60" name="answer1" maxlength="255" placeholder="ここに記入してください(255字以内)"></textarea>
+    <br>
+    <p class="form-style">その他、本実験に関して何かコメントがあれば記入してください</p>
+    <textarea rows="10" cols="60" name="answer2" maxlength="255" placeholder="ここに記入してください(255字以内)"></textarea>
+    <br><br>
+
+  <input type="submit" name="ans" value="回答する" class="post-btn">
+<% end %>

@@ -1,0 +1,18 @@
+
+<h1 class="top">Twitterを用いたスパムシェアおよびリンククリックに関する実験</h1>
+
+<% (1..8).each do |n| %>
+<br>
+<% if @progress > n-1  %>
+<span class="done-situation">シチュエーション<%= n%></span>
+<% elsif @progress == n-1 %>
+<%= link_to "シチュエーション" + n.to_s, 'timeline/' + n.to_s, class: "link-situation" %>
+<% else %>
+<span class="text-situation">シチュエーション<%= n%></span>
+<% end %>
+<br>
+<% end %>
+<% if @progress == 8 %>
+<br>
+<%= link_to "最後の質問", 'inp', class: "link-situation" %>
+<% end %>

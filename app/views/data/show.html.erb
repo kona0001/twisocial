@@ -1,0 +1,73 @@
+
+<p>ACCOUNT</p>
+<table>
+  <% @accounts.each do |data| %>
+  <tr>
+    <td><%= data.id %></td>
+    <td><%= data.uid %></td>
+    <td><%= data.icon_url %></td>
+    <td><%= data.progress %></td>
+    <td><%= data.like_name %></td>
+    <td><%= data.known_name %></td>
+    <td><%= data.age %></td>
+    <td><%= data.gender %></td>
+    <td><%= data.extra %></td>
+    <td><%= data.token %></td>
+    <td><%= data.secret %></td>
+  </tr>
+  <% end %>
+</table>
+
+<p>SITUATION</p>
+<table>
+  <% @situations.each do |data| %>
+  <tr>
+    <td><%= data.num %></td>
+    <td><%= data.text %></td>
+    <td><%= data.like %></td>
+    <td><%= data.fav %></td>
+    <td><%= data.mode %></td>
+    <td><%= data.image_url %></td>
+  </tr>
+  <% end %>
+</table>
+
+<p>SPAM USER</p>
+<table>
+  <% @spamusers.each do |data| %>
+  <tr>
+    <td><%= data.num %></td>
+    <td><%= data.name %></td>
+    <td><%= data.screenname %></td>
+    <td><%= data.icon_url %></td>
+    <td><%= data.follow %></td>
+    <td><%= data.follower %></td>
+    <td><%= data.description %></td>
+  </tr>
+  <% end %>
+</table>
+
+<p>ANSWER1</p>
+<table>
+  <% @answer.each do |data| %>
+  <tr>
+    <td><%= data.uid %></td>
+    <td><%= data.situation %></td>
+    <td><%= data.ans1 %></td>
+    <td><%= data.ans2 %></td>
+    <td><%= data.ans3 %></td>
+  </tr>
+  <% end %>
+</table>
+
+<p>ANSWER2</p>
+<table>
+  <% @answer2.each do |data| %>
+  <tr>
+    <td><%= data.uid %></td>
+    <td><%= data.type %></td>
+    <td><%= data.ans1 %></td>
+    <td><%= data.ans2 %></td>
+  </tr>
+  <% end %>
+</table>

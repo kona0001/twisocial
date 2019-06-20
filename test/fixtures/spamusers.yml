@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  num: 1
+  name: MyString
+  screenname: MyString
+  icon_url: MyString
+  follow: 1
+  follower: 1
+  description: MyString
+
+two:
+  num: 1
+  name: MyString
+  screenname: MyString
+  icon_url: MyString
+  follow: 1
+  follower: 1
+  description: MyString

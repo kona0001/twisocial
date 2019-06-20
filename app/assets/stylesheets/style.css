@@ -1,0 +1,417 @@
+
+* {color:#444444; line-height:1.5; text-align: center;}
+
+.top {margin-top:1em;}
+
+.border {
+margin: 10px auto; padding:1em; border:0.2em solid black;
+width:50%;
+background-color:lightgray;
+}
+
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-size: 2em;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.btn-flat-border:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+.circle {
+    list-style:  none;      /* デフォルトのアイコンを消す */
+    margin:  0;             /* デフォルト指定上書き */
+    padding: 0;             /* デフォルト指定上書き */
+    text-align: left;
+}
+
+.circle:before {
+    content:  "";     /* 空の要素作成 */
+    width:  5px;               /* 幅指定 */
+    height:  5px;              /* 高さ指定 */
+    display:  inline-block;     /* インラインブロックにする */
+    background-color: black;  /* 背景色指定 */
+    border-radius:  50%;        /* 要素を丸くする */
+    position:  relative;        /* 位置調整 */
+    top: -0.25em;                  /* 位置調整 */
+    margin-right: 5px;          /* 余白指定 */
+}
+
+.background {
+background-color:#E6E6E6;
+}
+
+.snslayout {
+width:700px;
+background-color:white;
+margin: 0px auto;
+margin-top:5.4em;
+}
+
+.home {
+  top:0;
+  left:0;
+  width:100%;
+  text-align: left;
+  height: 5.4em;
+  box-shadow: 0px 2px #999999;
+  background-color: #77cbff;
+  position:fixed;
+}
+
+.icon-circle {
+    border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+    width:  4em;       /* ※縦横を同値に */
+    height: 4em;       /* ※縦横を同値に */
+  }
+
+.icon-block {
+  width:5.8em;
+  height:5.4em;
+  margin: auto;
+  display:table-cell;
+  vertical-align: middle;
+}
+
+.home-block {
+  width:9em;
+  height:4em;
+  box-shadow: 0px 2px black;
+  display:table-cell;
+  vertical-align: middle;
+}
+
+.home-icon-block {
+weight:4em;
+height:5.4em;
+display: table-cell;
+vertical-align: bottom;
+}
+
+.home-text-block {
+  weight:5em;
+  height:5.4em;
+  display: table-cell;
+  vertical-align: bottom;
+}
+
+.home-icon {
+    width:  3.5em;
+    height: 3.5em;
+    margin-bottom:0.5em;
+  }
+
+.home-text {
+font-weight: bold;
+font-size: 1.5em;
+margin-bottom:0.6em;
+margin-left:0.1em;
+}
+
+.update-block {
+  height:3em;
+  margin-bottom:2px;
+  text-align: center;
+  line-height: 3em;
+  box-shadow: 1px 2px #eeeeee;
+  color: dodgerblue;
+  background-color:#eeeeee;
+  border: solid 2px #ebebeb;
+  cursor : pointer;
+}
+
+.update-block:hover {
+  background: #dddddd;
+  border: solid 2px #bbbbbb;
+}
+
+.tweet-block {
+  margin-bottom:2px;
+  text-align: left;
+  box-shadow: 1px 2px #eeeeee;
+  background-color:white
+}
+
+.tweet-block:hover {
+  background: #ebebeb;
+}
+
+.twitter-icon-block {
+  width:5.8em;
+  display:table-cell;
+  vertical-align: top;
+}
+
+.icon-layout {
+  margin-top: 1em;
+}
+
+.twitter-right-block {
+  display:table-cell;
+}
+
+.twitter-name-block {
+text-align: left;
+margin-top:0.5em;
+
+}
+
+.twitter-name {
+font-weight: bold;
+font-size: 1.5em;
+margin-left:0.5em;
+}
+
+.twitter-screenname {
+color: #888888
+font-size: 1.5em;
+margin-left:0.2em;
+}
+
+.twitter-text-block {
+padding-bottom:1em;
+}
+
+.twitter-text {
+font-size: 1.5em;
+margin-left:0.5em;
+margin-right:0.5em;
+text-align: left;
+}
+
+.twitter-bottom-block {
+text-align: left;
+margin-bottom:0.5em;
+}
+
+.twitter-rt {
+margin-left:2em;
+color: #888888
+}
+
+.twitter-fav {
+margin-left:2em;
+color: #888888
+}
+
+.twitter-reply-block {
+  padding-left:4em;
+  border-top: solid 2px #dddddd;
+}
+
+.twitter-reply-name {
+font-weight: bold;
+font-size: 1em;
+margin-left:0.5em;
+}
+
+.twitter-reply-screenname {
+color: #888888
+font-size: 1em;
+margin-left:0.2em;
+}
+
+.twitter-reply-text {
+font-size: 1em;
+margin-left:0.5em;
+margin-right:0.5em;
+text-align: left;
+}
+
+.profile-icon-block {
+}
+
+.profile-name-block {
+font-weight: bold;
+font-size: 1.5em;
+}
+
+.profile-follow-block {
+color: #888888;
+width: 150px;
+display:table-cell;
+}
+
+.profile-follower-block {
+color: #888888;
+width: 150px;
+display:table-cell;
+}
+
+.profile-text-block {
+border-top : solid 2px #bbbbbb;
+padding-top: 1em;
+text-align: center;
+}
+
+.twitter-info {
+  color: #999999;
+  font-size: 0.8em;
+  margin-left:2em;
+  text-decoration: underline;
+}
+
+#profile-block {
+  width:300px;
+  border : solid 2px #bbbbbb;
+  padding-left:2em;
+  padding-right:2em;
+  padding-bottom:2em;
+  text-align: center;
+  top:13em;
+  background: white;
+  position:fixed;
+  display:none;
+  z-index: 5;
+}
+
+/* モーダル コンテンツエリア */
+#modal-main {
+  display:none;
+  width:700px;
+  padding:1em;
+  border-radius: 1em;
+  background-color: white;
+  color: #666666;
+  position:fixed;
+  top:6em;
+  z-index:3;
+}
+
+/* モーダル 背景エリア */
+#modal-bg {
+  display:none;
+  width:100%;
+  height:130%;
+  background-color:rgba(0,0,0,0.5);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:1;
+}
+
+#new-tweet{
+  display:none;
+}
+
+#pop-profile{
+  cursor:pointer;
+}
+
+#post-form {
+  width:100%;
+  height:200px;
+  padding-top:1em;
+  left:0;
+  bottom:-220px;
+  background-color:lightyellow;
+  position:fixed;
+  z-index:6;
+}
+
+.question {
+  width:500px;
+  vertical-align: top;
+  display:table-cell;
+}
+
+.form-style {
+  font-size: 1em;
+  line-height: 1em;
+}
+
+.select-form {
+  height:9em;
+}
+
+.post-btn {
+  text-decoration: none;
+  font-size: 2em;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.post-btn:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+textarea {
+width: 450px;
+height: 6em;
+line-height: 1.5em;
+}
+
+.cp_ipselect {
+	overflow: hidden;
+	width: 30%;
+	margin: 2em auto;
+	text-align: center;
+}
+.cp_ipselect select {
+	width: 100%;
+	padding-right: 1em;
+	cursor: pointer;
+	text-indent: 0.01px;
+	text-overflow: ellipsis;
+	border: none;
+	outline: none;
+	background: transparent;
+	background-image: none;
+	box-shadow: none;
+	-webkit-appearance: none;
+	appearance: none;
+}
+.cp_ipselect select::-ms-expand {
+    display: none;
+}
+.cp_ipselect.cp_sl03 {
+	position: relative;
+	border-radius: 2px;
+	border: 2px solid #da3c41;
+	background: #ffffff;
+}
+.cp_ipselect.cp_sl03::before {
+	position: absolute;
+	top: 0.8em;
+	right: 0.8em;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #da3c41;
+	pointer-events: none;
+}
+.cp_ipselect.cp_sl03 select {
+	padding: 8px 38px 8px 8px;
+	color: #da3c41;
+}
+
+.link-situation {
+  font-size: 2em;
+  color: #0066c0;
+}
+
+.text-situation {
+  font-size: 2em;
+  color: black;
+}
+
+.done-situation {
+  font-size: 2em;
+  color: dimgray;
+  text-decoration: line-through;
+}

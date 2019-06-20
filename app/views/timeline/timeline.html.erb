@@ -1,0 +1,184 @@
+<div class = "background">
+<div class = "snslayout">
+<div class = "home">
+<div class = "icon-block">
+   <%= image_tag("#{@user.profile_image_uri_https}", class: "icon-circle") %>
+</div>
+<div class = "home-block">
+  <div class = "home-icon-block">
+    <%= image_tag("home.png", :class => "home-icon") %>
+  </div>
+  <div class = "home-text-block"><p class = "home-text">ホーム</p></div>
+</div>
+</div>
+
+<!--肝心のツイートはここから-->
+<div id="modal-main">
+
+  <div class="twitter-icon-block">
+    <div id="pop-profile"><%= image_tag("#{@spamuser.icon_url}", class: "icon-circle icon-layout") %></div>
+  </div>
+  <div class="twitter-right-block">
+    <div class="twitter-name-block">
+      <span class = "twitter-name"><%= @spamuser.name %></span>
+      <span class = "twitter-screenname">@<%= @spamuser.screenname %></span>
+      <span class = "twitter-info"><%= @like_name %>がリツイート</span>
+    </div>
+    <div class = "twitter-text-block">
+      <div class = "twitter-text"><%= @spam.text %></div>
+    </div>
+    <div class="twitter-bottom-block">
+      <span class = "twitter-rt">RT: <%= @spam.fav %></span>
+      <span class = "twitter-fav">いいね: <%= @spam.like %></span>
+    </div>
+  </div>
+
+
+
+  <div id="profile-block">
+    <div class="profile-icon-block"><%= image_tag("#{@spamuser.icon_url}", class: "icon-circle icon-layout") %></div>
+    <div class="profile-name-block"><%= @spamuser.name %></div>
+    <div class="profile-follow-block">Follow: <%= @spamuser.follow %></div>
+    <div class="profile-follower-block">Follower: <%= @spamuser.follower %></div>
+    <div class="profile-text-block"><%= @spamuser.description %></div>
+  </div>
+</div>
+<div id="modal-bg"></div>
+<!--ここまで-->
+
+<div id="post-form">
+<%= form_tag("post", method: "post") do %>
+    <div class="question">
+      <p class="form-style">Q1: あなたはこのツイートを　</p>
+      <select name="answer1" class="form-style parent"　required>
+        <option value="" class="msg" disabled selected>選択してください</option>
+        <option value="1">RTする</option>
+        <option value="2">RTしてもよい（気分次第）</option>
+        <option value="3">決められない</option>
+        <option value="4">RTはあまりしたくない</option>
+        <option value="5">RTしない</option>
+      </select>
+      </div>
+      <div class="question">
+      <p class="form-style">Q2: その理由は？（複数選択可）</p>
+      <select name="answer2[]" class="form-style children select-form" multiple required>
+        <option value="" class="msg" disabled selected>ctrlを押しながら複数選択できます</option>
+
+        <option value="1" data-val="1">知人がRTしたものだから</option>
+        <option value="2" data-val="1">信頼している人がRTしたものだから</option>
+        <option value="3" data-val="1">興味があるツイートだから</option>
+        <option value="4" data-val="1">自分が得をするから</option>
+        <option value="5" data-val="1">自分が損をしないから</option>
+        <option value="6" data-val="1">ツイートをした人のフォロー数を見て</option>
+        <option value="7" data-val="1">ツイートをした人のフォロワー数を見て</option>
+        <option value="8" data-val="1">ツイートをした人のプロフィールを見て</option>
+        <option value="9" data-val="1">ツイートのRT数を見て</option>
+        <option value="10" data-val="1">ツイートのいいね数を見て</option>
+        <option value="11" data-val="1">その他（自由記述）</option>
+
+        <option value="1" data-val="2">知人がRTしたものだから</option>
+        <option value="2" data-val="2">信頼している人がRTしたものだから</option>
+        <option value="3" data-val="2">興味があるツイートだから</option>
+        <option value="4" data-val="2">自分が得をするから</option>
+        <option value="5" data-val="2">自分が損をしないから</option>
+        <option value="6" data-val="2">ツイートをした人のフォロー数を見て</option>
+        <option value="7" data-val="2">ツイートをした人のフォロワー数を見て</option>
+        <option value="8" data-val="2">ツイートをした人のプロフィールを見て</option>
+        <option value="9" data-val="2">ツイートのRT数を見て</option>
+        <option value="10" data-val="2">ツイートのいいね数を見て</option>
+        <option value="11" data-val="2">その他（自由記述）</option>
+
+        <option value="1" data-val="3">ツイートをした人の詳細な情報がみたい</option>
+        <option value="2" data-val="3">ツイートをした人の他のツイートがみたい</option>
+        <option value="3" data-val="3">ツイートに対する他の人の反応がみたい</option>
+        <option value="4" data-val="3">ツイートをした人についてWebで調べたい</option>
+        <option value="5" data-val="3">迷っている</option>
+        <option value="6" data-val="3">その他（自由記述）</option>
+
+        <option value="1" data-val="4">信頼できないから</option>
+        <option value="2" data-val="4">知らない人のツイートだから</option>
+        <option value="3" data-val="4">自分が得をしないから</option>
+        <option value="4" data-val="4">自分が損をするから</option>
+        <option value="5" data-val="4">ツイートをした人のプロフィールを見て</option>
+        <option value="6" data-val="4">ツイートをした人のフォロー数を見て</option>
+        <option value="7" data-val="4">ツイートをした人のフォロワー数を見て</option>
+        <option value="8" data-val="4">ツイートのRT数を見て</option>
+        <option value="9" data-val="4">ツイートのいいね数を見て</option>
+        <option value="10" data-val="4">興味がないツイートだから</option>
+        <option value="11" data-val="4">スパムの可能性があるから</option>
+        <option value="12" data-val="4">その人に自分を知られたくないから</option>
+        <option value="13" data-val="4">その他（自由記述）</option>
+
+        <option value="1" data-val="5">信頼できないから</option>
+        <option value="2" data-val="5">知らない人のツイートだから</option>
+        <option value="3" data-val="5">自分が得をしないから</option>
+        <option value="4" data-val="5">自分が損をするから</option>
+        <option value="5" data-val="5">ツイートをした人のプロフィールを見て</option>
+        <option value="6" data-val="5">ツイートをした人のフォロー数を見て</option>
+        <option value="7" data-val="5">ツイートをした人のフォロワー数を見て</option>
+        <option value="8" data-val="5">ツイートのRT数を見て</option>
+        <option value="9" data-val="5">ツイートのいいね数を見て</option>
+        <option value="10" data-val="5">興味がないツイートだから</option>
+        <option value="11" data-val="5">スパムの可能性があるから</option>
+        <option value="12" data-val="5">その人に自分を知られたくないから</option>
+        <option value="13" data-val="5">その他（自由記述）</option>
+
+      </select>
+    </div>
+    <div class="question">
+      <p class="form-style">Q3: その他に関して、また他に何かコメントがあれば</p>
+      <textarea name="answer3" maxlength="254"></textarea>
+    </div>
+    <div class="question">
+      <input type="submit" name="ans" value="回答する" class="post-btn">
+    </div>
+  <% end %>
+</div>
+
+<div class="tweet-block" id="new-tweet">
+<div class="twitter-icon-block"><%= image_tag("#{@spamuser.icon_url}", class: "icon-circle icon-layout") %></div>
+<div class="twitter-right-block">
+  <div class="twitter-name-block">
+    <span class = "twitter-name"><%= @spamuser.name %></span>
+    <span class = "twitter-screenname">@<%= @spamuser.screenname %></span>
+    <span class = "twitter-info"><%= @like_name %>がリツイート</span>
+  </div>
+  <div class = "twitter-text-block">
+    <div class = "twitter-text"><%= @spam.text %></div>
+  </div>
+  <div class="twitter-bottom-block">
+    <span class = "twitter-rt">RT: <%= @spam.fav %></span>
+    <span class = "twitter-fav">fav: <%= @spam.like %></span>
+  </div>
+</div>
+</div>
+
+<div class="update-block" id="update-tweet">ツイートを更新する（１）</div>
+
+
+
+<% @tweets.each do |tweet| %>
+<div class="tweet-block">
+<div class="twitter-icon-block">
+  <%= image_tag( "#{tweet.user.profile_image_url_https}", class: "icon-circle icon-layout") %>
+</div>
+<div class="twitter-right-block">
+  <div class="twitter-name-block">
+    <span class = "twitter-name"><%= tweet.user.name %></span>
+    <span class = "twitter-screenname">@<%= tweet.user.screen_name %></span>
+  </div>
+  <div class = "twitter-text-block">
+    <div class = "twitter-text">
+      <%= tweet.full_text %>
+    </div>
+  </div>
+  <div class="twitter-bottom-block">
+    <span class = "twitter-rt">RT: <%= tweet.retweet_count %></span>
+    <span class = "twitter-fav">いいね: <%= tweet.favorite_count %></span>
+  </div>
+</div>
+</div>
+<% end %>
+
+</div>
+</div>

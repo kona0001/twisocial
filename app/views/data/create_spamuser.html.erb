@@ -1,0 +1,33 @@
+<div class="top"></div>
+
+<%= form_tag("store_spamuser", method: "post") do %>
+    <span class="form-style">num</span>
+    <input type="text" name="num" />
+    <br>
+
+    <span class="form-style">name</span>
+    <input type="text" name="name" />
+    <br>
+
+    <span class="form-style">screenname</span>
+    <input type="text" name="screenname" />
+    <br>
+
+    <span class="form-style">icon</span>
+    <input type="text" name="icon" />
+    <br>
+
+    <span class="form-style">follow</span>
+    <input type="text" name="follow" />
+    <br>
+
+    <span class="form-style">follower</span>
+    <input type="text" name="follower" />
+    <br>
+
+    <span class="form-style">description</span>
+    <textarea name="description"></textarea>
+    <br>
+
+  <input type="submit" name="ans" value="作成" class="post-btn">
+<% end %>
